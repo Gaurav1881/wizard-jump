@@ -316,8 +316,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 433747431}
-  jumpVelocity: 40
   animator: {fileID: 433747430}
+  horizontalMultiplier: 0.01
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
