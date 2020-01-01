@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 433747432}
   m_Layer: 0
   m_Name: wizard
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,7 +227,7 @@ Transform:
   - {fileID: 1015007297}
   - {fileID: 664379953}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &433747427
 Rigidbody2D:
@@ -245,7 +245,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7dd8a6fb30347454ca06c64f2fa75254, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -284,8 +284,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 651751477
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 02cd416c6630ac343826ead7752495da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -502,6 +503,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ca05180262cae4ab346a04fd4a12f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 433747426}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -663,7 +677,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664379952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.9, z: 0}
+  m_LocalPosition: {x: 0, y: -0.942, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 433747426}
@@ -680,7 +694,7 @@ GameObject:
   - component: {fileID: 744874500}
   - component: {fileID: 744874501}
   - component: {fileID: 744874502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,7 +713,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &744874501
 SpriteRenderer:
@@ -787,7 +801,7 @@ GameObject:
   - component: {fileID: 846210834}
   - component: {fileID: 846210837}
   - component: {fileID: 846210836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -884,7 +898,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 846210833}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7dd8a6fb30347454ca06c64f2fa75254, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
@@ -1259,7 +1273,7 @@ GameObject:
   - component: {fileID: 1832294196}
   - component: {fileID: 1832294195}
   - component: {fileID: 1832294194}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform 2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1294,7 +1308,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1832294193}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7dd8a6fb30347454ca06c64f2fa75254, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
@@ -1385,7 +1399,7 @@ GameObject:
   - component: {fileID: 2124600227}
   - component: {fileID: 2124600226}
   - component: {fileID: 2124600225}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platform 2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1420,7 +1434,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2124600224}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7dd8a6fb30347454ca06c64f2fa75254, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
